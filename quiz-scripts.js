@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const questions = [
       {
-          question: "What is the capital of France?",
-          options: ["New York", "London", "Paris", "Dubai"],
-          answer: "Paris"
+          question: "What is the best team in QBO?",
+          options: ["Team Jackie", "Team Jon", "Team Jeff"],
+          answer: "Team Jon"
       },
       // More questions...
   ];
@@ -30,8 +30,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
       const question = questions[currentQuestionIndex];
       if (selected === question.answer) {
           alert('Correct!');
-      } else {
-          alert('Wrong!');
+      } else if(selected == "Team Jackie") {
+          alert ('mmm, close but not quite right..')
+      }
+      else {
+          alert('Hah! Try again, Nerd! ');
       }
   }
 
